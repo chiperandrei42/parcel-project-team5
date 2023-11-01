@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    max-width: 767px;
+    min-width: 320px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+html{
+    max-width: 767px;
+    margin: 0;
+}
+.products-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+}
+.products-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    padding: 0 20px;
+}
+.products-list{
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.products-label{
+    font-family: Titan One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 165, 186, 1);
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.products-header{
+    font-family: Titan One;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgba(212, 20, 67, 1);
+    margin-top: 0;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.products-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.product-item{
+    position: relative;
+    width: 280px;
+    height: 485px;
+    padding-top: 160px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 24px;
+    text-align: center;
+    box-sizing:border-box ;
+}
+.product-image{
+    position: absolute;
+    width: 280px;
+    top:-25%;
+    left:0;
+}
+.product-item:first-child{
+    background-color: #FFB8CA;
+}
+.product-item:nth-child(2){
+    background-color: #F0D1A5;
+}
+.product-item:nth-child(3){
+    background-color: #C2E297;
+}
+
+
+.product-item h3{
+    font-family: Titan One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.product-description{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
