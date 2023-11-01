@@ -148,7 +148,6 @@ table {
 .logo-svg {
   width:199px;
   height:50px;
-  margin-top:0;
 }
 
 .header-section {
@@ -234,26 +233,13 @@ table {
   width:100%;
   align-items:center;
 }
-
-.milk-bottle-header {
+.tablet-cafes-number, .food-truck-number, .woman-eating-ice-cream-header, .paragraph-and-button-container, .header-secondary-text, .milk-bottle-header {
   display:none;
 }
-
-.header-secondary-text {
-  display:none;
-}
-
-.paragraph-and-button-container {
-  display:none;
-}
-
 // Tablet
 @media screen and (min-width: 768px) {
     .icecream-cone {
       right:303px;
-    }
-    .logo-svg {
-      margin-top:32px;
     }
     .header-text {
       padding-top: 20px;
@@ -262,9 +248,6 @@ table {
       padding-left: 32px;
       padding-right:32px;
     }
-    .tablet-buy-now {
-      display:flex;
-    }
     .logo-menu-container {
       display: flex;
         align-items: center;
@@ -272,11 +255,7 @@ table {
         padding-top: 8px;
         width:75%;
     }
-    .mobile-tablet-menu-icon {
-      margin-top:20px;
-    }
     .tablet-buy-now {
-      margin-top: 23px;
       border-radius: 20px;
         border: none;
         background-color: #fff;
@@ -303,7 +282,6 @@ table {
 
     .milk-bottle-header {
       display:block;
-      padding-top:20px;
     }
     .header-secondary-text {
       width:114px;
@@ -340,9 +318,42 @@ table {
       background-color: rgba(212, 20, 67, 1);
       color:#fff;
     }
+    .woman-eating-ice-cream-header {
+      position:absolute;
+      display:block;
+      right:32px;
+      top:265px;
+    }
+    .header-section {
+      height:416px;
+    }
+    .icecream-cone {
+      width:143px;
+      height:336px;
+      top:80px;
+    }
+    .tablet-cafes-number {
+      display:block;
+      position:absolute;
+      width:43px;
+      height:44px;
+      right:32;
+      top:92;
+    }
+
+    .food-truck-number {
+      display:block;
+      position:absolute;
+      width:43px;
+      height:51px;
+      right:32;
+      top:152;
+    }
 }
 
 // Desktop
 @media screen and (min-width: 1158px) {
-
+  .mobile-tablet-menu-icon {
+    display:none;
+  }
 }
