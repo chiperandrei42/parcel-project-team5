@@ -56,6 +56,12 @@
                 d="M12.622 30.548c0.386 2.050 6.955 1.858 6.955-0.128 0-0.705-0.837-0.961-3.606-0.961-3.027 0-3.542 0.192-3.349 1.089z">
             </path>
         </symbol>
+        <symbol id="icon-franchise" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
+<symbol id="icon-locations" viewBox="0 0 19 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
     </defs>
     <symbol id="icon-ice-cream-cone-header" viewBox="0 0 13 32">
         <path d="M0 0h13.346v32h-13.346v-32z"></path>
