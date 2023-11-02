@@ -132,14 +132,6 @@ table {
 
 
 
-
-
-
-:root {
-  --primary-font-family: 'Titan One', sans-serif;
-  --secondary-font-family: 'DM Sans', sans-serif;
-}
-
 .container {
   padding-left:20px;
   padding-right:20px;
@@ -156,7 +148,7 @@ table {
 }
 
 .header-text {
-  font-family: var(--primary-font-family);
+  font-family: 'Titan One', sans-serif;
     font-size: 26px;
     font-weight: 400;
     line-height: 30px;
@@ -170,7 +162,7 @@ table {
 
 .header-text span {
   color:rgba(212, 20, 67, 1);
-  font-family: var(--primary-font-family);
+  font-family: 'Titan One', sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 46.32px;
@@ -192,7 +184,8 @@ table {
   position:absolute;
   background-color: transparent;
   right:32px;
-  top:92px;
+  top:100px;
+  width:170px;
 }
 
 .header-buttons {
@@ -213,7 +206,7 @@ table {
   border:none;
   background-color: #fff;
   cursor:pointer;
-  font-family: var(--secondary-font-family);
+  font-family: 'DM Sans', sans-serif;
     font-size: 8px;
     font-weight: 400;
     line-height: 10px;
@@ -225,6 +218,7 @@ table {
 
 .tablet-buy-now {
   display: none;
+  margin-top:10px;
 }
 
 .logo-menu-container {
@@ -233,7 +227,7 @@ table {
   width:100%;
   align-items:center;
 }
-.tablet-cafes-number, .food-truck-number, .woman-eating-ice-cream-header, .paragraph-and-button-container, .header-secondary-text, .milk-bottle-header {
+.tablet-cafes-number, .desktop-navbar, .food-truck-number, .woman-eating-ice-cream-header, .paragraph-and-button-container, .header-secondary-text, .milk-bottle-header {
   display:none;
 }
 // Tablet
@@ -260,7 +254,7 @@ table {
         border: none;
         background-color: #fff;
         cursor: pointer;
-        font-family: var(--secondary-font-family);
+        font-family: 'DM Sans', sans-serif;
           font-size: 16px;
           font-weight: 700;
           line-height: 21px;
@@ -282,11 +276,12 @@ table {
 
     .milk-bottle-header {
       display:block;
+      width:152px;
     }
     .header-secondary-text {
       width:114px;
       display:flex;
-      font-family: var(--secondary-font-family);
+      font-family: 'DM Sans', sans-serif;
         font-size: 8px;
         font-weight: 400;
         line-height: 12px;
@@ -303,7 +298,7 @@ table {
     }
     .paragraph-and-button-container button {
       margin-top:7px;
-      font-family: var(--secondary-font-family);
+      font-family: 'DM Sans', sans-serif;
       width:26px;
       height:26px;
       border-radius:50%;
@@ -323,6 +318,7 @@ table {
       display:block;
       right:32px;
       top:265px;
+      width:190px;
     }
     .header-section {
       height:416px;
@@ -355,5 +351,65 @@ table {
 @media screen and (min-width: 1158px) {
   .mobile-tablet-menu-icon {
     display:none;
+  }
+  .icecream-cone {
+    width:auto;
+    height:auto;
+    top:107px;
+    right:368px;
+  }
+  .header-section {
+    height:664px;
+  }
+  .woman-eating-ice-cream-header {
+    width:auto;
+    top:423px;
+  }
+  .milk-bottle-header {
+    width:auto;
+  }
+  .header-secondary-text {
+    width:200px;
+    font-size:14px;
+    line-height:19.6px;
+  }
+  .header-text {
+    padding-top:60px;
+    font-size:38px;
+    width:277px;
+    line-height: 52.49px;
+  }
+  .header-text span {
+    font-size:58px
+  }
+  .header-buttons button {
+    padding: 15px 30px;
+    font-size:14px;
+  }
+  .tablet-cafes-number {
+    width:72px;
+    height:77px;
+  }
+  .food-truck-number {
+    width:92px;
+    height:76px;
+    top:185px;
+  }
+  .desktop-navbar {
+    display:flex;
+    gap:35px;
+  }
+  .desktop-navbar a {
+    text-decoration: none;
+    color:#fff;
+    font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0em;
+      transition: color 250ms ease-in-out;
+  }
+  .desktop-navbar a:hover {
+    color: rgba(212, 20, 67, 1);
   }
 }
