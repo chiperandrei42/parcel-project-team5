@@ -97,8 +97,9 @@
 }
 
 // Desktop
-@media screen and (max-width: 1157px) {
-  .modal {
+@media screen and (min-width: 1157px) {
+  .modal,
+  .open-btn {
     display: none;
   }
 }
