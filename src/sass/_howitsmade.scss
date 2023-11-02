@@ -2,6 +2,7 @@
 
 .how-its-made-container{
     background-color: #FFF5F6;
+    padding: 0 20px;
 
 
 }
@@ -9,6 +10,7 @@
     padding-top: 60px;
 }
 .section-made-label{
+
     text-transform: uppercase;
     font-family: Titan One;
     font-size: 18px;
@@ -16,6 +18,8 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
+    color: #FFA5BA;
+
 
 }
 .section-made-title{
@@ -26,9 +30,114 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     text-align: center;
+    color: #D41443;
+
 
 }
-.section-made-text{
+.how-its-made-section{
     background-image: url(../images/section-made-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 30% 20%;
+    
+}
+.section-made-text p{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    width: 220px;
+
+}
+.section-made-text .section-made-paragraph{
+    color: #907E82;
+
+}
+.section-made-btn{
+    margin-top: 20px;
+
+    border: none;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #ffff;
+    color: #D41443;
+    cursor: pointer;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-right: 30px;
+
+}
+.section-made-btn:hover{
+    background-color:#ecebeb;
 }
 
+
+.button-text{
+    position: relative;
+}
+.btn-dash{
+    position: absolute;
+    top: 38px;
+    left: 150px;
+}
+
+.about-product{
+    margin-top: 40px;
+}
+.about-product-list{
+    list-style: none;
+}
+
+
+.about-product-numbers{
+    font-family: Titan One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #D41443;
+
+}
+.about-product-text{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 768px){
+    .section-made-image{
+        display: flex;
+    }
+    .section-made-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        width: 334px;
+    }
+    .about-product-list{
+        display: flex;
+    }
+
+}
+
+
+
+// Desktop 
+@media screen and (min-width: 1158px){
+
+}
