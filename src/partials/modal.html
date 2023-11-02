@@ -1,43 +1,24 @@
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
-  <link rel="stylesheet" href="./sass/_modal.scss" />
-</head>
+<div class="modal is-hidden" data-modal>
+  <svg class="close-btn" data-modal-close>
+    <use href="./svg/icons.svg#icon-close-modal-svg"></use>
+  </svg>
 
-<body>
-  <div class="modal is-hidden" data-modal>
-    <svg class="close-btn" data-modal-close>
-      <use href="./svg/icons.svg#icon-close-modal-svg"></use>
-    </svg>
+  <div class="modal-content">
+    <button class="btn-buy-modal">
+      <span>Buy now</span>
 
-    <div class="modal-content">
-      <button class="btn-buy-modal">
-        <span>Buy now</span>
-
-        <svg class="arrow-svg">
-          <use href="./svg/icons.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
-      <nav class="modal-nav">
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">How it&#8217;s made?</a>
-        <a href="#">Our products</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
+      <svg class="arrow-svg">
+        <use href="./svg/icons.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+    <nav class="modal-nav">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">How it&#8217;s made?</a>
+      <a href="#">Our products</a>
+      <a href="#">Contact</a>
+    </nav>
   </div>
-  <header>
-    <button class="open-btn" data-modal-open>Open</button>
-  </header>
+</div>
 
-  <script src="./js/modal.js"></script>
-</body>
+<script src="./js/modal.js"></script>
