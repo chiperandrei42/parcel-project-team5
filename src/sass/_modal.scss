@@ -1,0 +1,105 @@
+:root {
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(225, 121, 146, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 14px;
+  height: 14px;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 60px;
+}
+
+.btn-buy-modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 90%;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  color: rgba(212, 20, 67, 1);
+  border-radius: 22px;
+  align-self: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  transition: opacity var(--transition);
+}
+
+.btn-buy-modal:hover {
+  cursor: pointer;
+  opacity: 83%;
+}
+
+.arrow-svg {
+  height: 8px;
+  width: 6px;
+}
+
+.modal-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-nav a {
+  border-top: 1px solid rgba(225, 130, 152, 1);
+  text-decoration: none;
+  padding: 12px 0 12px 20px;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  transition: color var(--transition);
+}
+.modal-nav:last-child {
+  border-bottom: 1px solid rgba(225, 130, 152, 1);
+}
+
+.modal-nav a:hover {
+  cursor: pointer;
+  color: rgba(212, 20, 67, 1);
+}
+
+// Desktop
+@media screen and (min-width: 1157px) {
+  .modal {
+    display: none;
+  }
+}
