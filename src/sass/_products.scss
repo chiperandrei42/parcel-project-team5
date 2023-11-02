@@ -30,6 +30,9 @@
     margin-bottom: 15px;
     text-transform: uppercase;
 }
+
+
+
 .products-header{
     font-family: Titan One;
     font-size: 34px;
@@ -42,6 +45,8 @@
     margin-bottom: 150px;
     text-transform: uppercase;
 }
+
+
 
 .products-list{
     margin: 0;
@@ -106,4 +111,51 @@
 .arrow-right{
     width: 40px;
     height: 40px;
+}
+
+// Tablet
+@media screen and (min-width: 768px){
+    .products-section{
+        max-width: 768px;
+    }
+    .products-container{
+        max-width: 768px;
+        padding: 0 35px;
+    }
+    .products-list {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .products-label{
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .products-header{
+        font-size: 48px;
+        line-height: 55px;
+    }
+    .product-item{
+        flex-basis: calc(33.33333% - 20px);
+        position: relative;
+        width: 225px;
+        height: 485px;
+        padding-top: 118px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .product-image {
+        width: 225px;
+        top: -25%;
+        left: 0;
+    }
+    .product-description {
+        line-height: 25px;
+    }
+
+}
+
+// Desktop
+@media screen and (min-width: 1158px){
+
 }
