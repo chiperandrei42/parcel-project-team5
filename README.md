@@ -1,40 +1,52 @@
 # Parcel template
 
-Acest proiect a fost creat cu ajutorul Parcel. Pentru familiarizare și configurarea funcțiilor suplimentare [consultați documentația](https://parceljs.org/).
+Этот проект был создан при помощи Parcel. Для знакомства и настройки
+дополнительных возможностей [обратись к документации](https://parceljs.org/).
 
-## Pregătirea noului proiect
+## Подготовка нового проекта
 
-1. Asigură-te că pe PC este instalată versiunea LTS Node.js.
-   [Descarcă și instalează](https://nodejs.org/en/) dacă este necesar.
-2. Clonează acest depozit.
-3. Schimbă numele folderului din `parcel-project-template` în numele proiectului tău.
-4. Creează un depozit nou și gol pe GitHub.
-5. Deschide proiectul în VSCode, pornește terminalul și conectează proiectul cu depozitul GitHub
-   [conform instrucțiunilor](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Setează dependențele proiectului în terminal cu ajutorul comenzii `npm install` .
-7. Pornește modul dezvoltator prin rularea comenzii `npm start`.
-8. Accesează  în browser pagina  [http://localhost:1234](http://localhost:1234).
-   Această pagină se va reîncărca automat după salvarea modificărilor efectuate în fișiere proiectului.
+1. Убедись что на компьютере установлена LTS-версия Node.js.
+   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
+2. Склонируй этот репозиторий.
+3. Измени имя папки с `parcel-project-template` на имя своего проекта.
+4. Создай новый пустой репозиторий на GitHub.
+5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
+   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
+6. Установи зависимости проекта в терминале командой `npm install` .
+7. Запусти режим разработки, выполнив команду `npm start`.
+8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
+   Эта страница будет автоматически перезагружаться после сохранения изменений в
+   файлах проекта.
 
-## Fișiere și foldere
+## Файлы и папки
 
-- Toate fișierele de stil trebuie să se afle în folderul `src/sass` să fie importate în fișiere de stil ale paginilor. De exemplu, pentru `index.html` fișierul de stiluri se numește
+- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
+  файлы стилей страниц. Например, для `index.html` файл стилей называется
   `index.scss`.
-- Adaugă imaginile în folderul `src/images`. Constructorul le va optimiza, dar numai atunci când va fi implementată versiunea de producție a proiectului. Toate acestea se realizează în cloud pentru a nu împovăra calculatorul, deoarece pe mașinile slabe aceasta poate dura mult timp. 
+- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
+  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
+  нагружать твой компьютер, так как на слабых машинах это может занять много
+  времени.
 
-## Implementare
-Pentru a configura implimentarea proiectului, trebuie de efectuat câțiva pași suplimentari pentru configurarea depozitului. Accesează fila `Settings` și în subsecțiunea `Actions` selectează `General`
+## Деплой
+
+Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
+по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
+`Actions` выбери выбери пункт `General`.
 
 ![GitHub actions settings](./assets/actions-config-step-1.png)
 
-Derulează pagina până la ultima secțiune, asigurându-te că opțiunile sunt selectate ca în imaginea următoare și apasă `Save`. Fără aceste setări, constructorul nu va avea drepturi suficiente pentru a automatiza procesul de implementare.
+Пролистай страницу до последней секции, в которой убедись что выбраны опции как
+на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
+недостаточно прав для автоматизации процесса деплоя.
 
 ![GitHub actions settings](./assets/actions-config-step-2.png)
 
-Versiunea de producție a proiectului va fi construită automat și implementată pe GitHub. Pages, în ramura `gh-pages`, de fiecare dată când ramura `main` va fi actualizată. De exemplu,
-după un push direct sau după o cerere acceptată pool-request. Pentru aceasta, în fișierul
-`package.json` trebuie de editat câmpul `homepage` și scriptul `build`, înlocuind
-`your_username` și `your_repo_name` pe cele proprii, și trimite modificările la GitHub.
+Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
+Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
+после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
+`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
+`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
 
 ```json
 "homepage": "https://your_username.github.io/your_repo_name/",
@@ -43,34 +55,45 @@ după un push direct sau după o cerere acceptată pool-request. Pentru aceasta,
 },
 ```
 
-Apoi, accesează setările depozitului GitHub (`Settings` > `Pages`) și setează distribuția versiunii de producție a fișierelor din folderul `/root` ramurii `gh-pages`, dacă acest lucru nu a fost făcut automat.
+Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
+выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
+это небыло сделано автоматически.
 
 ![GitHub Pages settings](./assets/repo-settings.png)
 
-### Starea implementării
+### Статус деплоя
 
-Starea implimentării ultimului commit este afișată printr-o pictogramă lângă ID-ul acestuia.
+Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
 
-- **Galbenă** - proiectul se asamblează și se implementează.
-- **Verde** - proiectul a fost implementat cu succes.
-- **Roșu** - în timpul listării, asamblării sau implementării a apărut o eroare.
+- **Желтый цвет** - выполняется сборка и деплой проекта.
+- **Зеленый цвет** - деплой завершился успешно.
+- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
 
-Mai multe informații despre stare pot fi obținute dând clic pe pictogramă și în fereastra derulantă - click pe linkul  `Details`.
+Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
+выпадающем окне перейти по ссылке `Details`.
 
 ![Deployment status](./assets/status.png)
 
-### Pagină live
+### Живая страница
 
-După un timp, de obicei câteva minute, pagina live poate fi vizualizată la adresa specificată în proprietatea editată `homepage`. De exemplu, iată linkul către versiunea live pentru acest depozit
+Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
+по адресу указанному в отредактированном свойстве `homepage`. Например, вот
+ссылка на живую версию для этого репозитория
 [https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
-Dacă se deschide o pagină goală, asigură-te că fila `Console` nu conține erori legate de căile incorecte ale fișierelor proCSS și JS din proiect (**404**). Probabil că este greșită valoarea proprietății `homepage` sau scriptului `build` în fișierul `package.json`.
+Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
+связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
+всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
+файле `package.json`.
 
-## Cum funcționează
+## Как это работает
 
 ![How it works](./assets/how-it-works.png)
 
-1. După fiecare push în ramura `main` depozitului GitHub, este rulat un script special (GitHub Action) din fișierul `.github/workflows/deploy.yml`.
-2. Vor fi copiate toate fișierele din depozitul de cod pe server, unde proiectul va fi inițializat și va trece prin procesul de construcție înainte de implementare
-3. Dacă toți pașii sunt executați cu succes, versiunea de producție asamblată a fișierelor proiectului este trimisă la ramura `gh-pages`. În caz contrar, în jurnalul de execuție al scriptului va fi indicată problema.
-
+1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
+   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
+2. Все файлы репозитория копируются на сервер, где проект инициализируется и
+   проходит сборку перед деплоем.
+3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
+   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
+   скрипта будет указано в чем проблема.
