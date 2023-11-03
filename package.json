@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.1",
-    "parcel": "^2.10.1",
+    "parcel": "^2.10.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4",
     "sharp": "^0.31.3"
