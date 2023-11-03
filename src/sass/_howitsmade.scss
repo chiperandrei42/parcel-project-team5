@@ -2,7 +2,6 @@
 
 .how-its-made-container{
     background-color: #FFF5F6;
-    padding: 0 20px;
 
 
 }
@@ -12,7 +11,7 @@
 .section-made-label{
 
     text-transform: uppercase;
-    font-family: Titan One;
+    font-family: var(--primary-font-family);
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -24,7 +23,7 @@
 }
 .section-made-title{
     text-transform: uppercase;
-    font-family: Titan One;
+    font-family: var(--primary-font-family);
     font-size: 34px;
     font-weight: 400;
     line-height: 39px;
@@ -34,30 +33,48 @@
 
 
 }
-.how-its-made-section{
+.section-made-image{
     background-image: url(../images/section-made-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 30% 20%;
-    
+    background-position: 20% 50%;
+
+
+   
+}
+.section-made-image picture:hover{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+.section-made-text{
+    padding: 0 20px;
 }
 .section-made-text p{
-    font-family: DM Sans;
+    font-family: var(--secondary-font-family);
     font-size: 12px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0.04em;
     text-align: left;
     width: 220px;
+    cursor: default;
 
 }
+.section-made-text p:hover{
+    transform: scale(1.2);
+    transition: all .25s linear;
+}
+
 .section-made-text .section-made-paragraph{
     color: #907E82;
+    margin-top: 15px;
 
 }
 .section-made-btn{
     margin-top: 20px;
-
     border: none;
     width: 176px;
     height: 44px;
@@ -65,7 +82,7 @@
     background-color: #ffff;
     color: #D41443;
     cursor: pointer;
-    font-family: DM Sans;
+    font-family: var(--secondary-font-family);
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
@@ -76,7 +93,9 @@
 }
 .section-made-btn:hover{
     background-color:#ecebeb;
+
 }
+
 
 
 .button-text{
@@ -90,14 +109,39 @@
 
 .about-product{
     margin-top: 40px;
+    padding: 0 20px;
 }
 .about-product-list{
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
+.about-product-list h3{
+    margin-top: 30px;
+}
+.about-product-list li{
+    margin-top: 30px;
+    
+}
 
+.about-product-icons{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 .about-product-numbers{
-    font-family: Titan One;
+    font-family: var(--primary-font-family);
     font-size: 36px;
     font-weight: 400;
     line-height: 41px;
@@ -107,7 +151,7 @@
 
 }
 .about-product-text{
-    font-family: DM Sans;
+    font-family: var(--secondary-font-family);
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
@@ -122,16 +166,33 @@
 @media screen and (min-width: 768px){
     .section-made-image{
         display: flex;
+        justify-content: center;
     }
     .section-made-text{
         display: flex;
         flex-direction: column;
         margin-left: 30px;
         width: 334px;
+        margin-top: 40px;
+        
     }
     .about-product-list{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        
     }
+    .about-product-list li h3{
+        margin-top: 30px;
+    }
+    .about-product-list li p{
+        width: 150px;
+    }
+    .section-made-image{
+        background: none;
+    }
+
 
 }
 
@@ -139,5 +200,25 @@
 
 // Desktop 
 @media screen and (min-width: 1158px){
+    .section-made-image{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .section-made-text p{
+        width: 300px;
+    }
+    .about-product-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .section-made-image{
+        background-image: url(../images/section-made-bg-d.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 
 }
