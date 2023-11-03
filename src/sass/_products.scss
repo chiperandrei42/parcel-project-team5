@@ -285,4 +285,41 @@
     .product-item:hover h3{
         font-size: 33px;
     }
+    .products-label:hover{
+        cursor: default;
+        animation: letterspc;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    .products-header:hover{
+        cursor: default;
+        animation: letterspc2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes letterspc {
+        0% {
+            letter-spacing: 0.4em;
+        }
+        100% {
+            letter-spacing: 0.04em;
+        }
+    }
+    @keyframes letterspc2 {
+        0% {
+            letter-spacing: 0.6em;
+        }
+        100% {
+            letter-spacing: 0.06em;
+        }
+    }
+        
 }   
