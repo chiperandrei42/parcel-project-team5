@@ -59,12 +59,14 @@
     position: relative;
     width: 280px;
     height: 485px;
-    padding-top: 160px;
+    padding-top: 165px;
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 24px;
     text-align: center;
-    box-sizing:border-box ;  
+    box-sizing:border-box ;
+    transition: .35s cubic-bezier(.4, 0, .2, 1) 50ms;
+    transition-property: background-color, box-shadow, font-size, line-height;
 }
 .product-image{
     position: absolute;
@@ -107,12 +109,35 @@
     text-align: center;
     color: rgba(255, 255, 255, 1);
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: auto;
 }
 
 .arrow-right{
     width: 40px;
     height: 40px;
+}
+.arrow-container {
+    position: absolute;
+    left: 120px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+    transition-property: width, height, transform, box-shadow, background-color, fill;
+}
+
+.arrow-container svg {
+    width: 20px;
+    height: 20px;
+    fill: #d41443;
+    transition: .35s cubic-bezier(.4, 0, .2, 1) 0ms;
+    transition-property: transform, fill;
 }
 
 // Tablet
@@ -143,7 +168,7 @@
         position: relative;
         width: 225px;
         height: 485px;
-        padding-top: 118px;
+        padding-top: 130px;
         padding-left: 18px;
         padding-right: 18px;
     }
@@ -154,6 +179,45 @@
     }
     .product-description {
         line-height: 25px;
+    }
+    .product-item:hover .arrow-right {
+        transform: rotate(-90deg);
+        cursor: pointer;
+        fill: #fff;
+    }
+    .arrow-container{
+        left: 85px;
+    }
+    .product-item:hover .arrow-container {
+        border-radius: 35%;
+        background-color: #d41443;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, .15);
+    }
+    .product-item:first-child:hover {
+        box-shadow: 0 5px 15px rgba(144, 35, 62, .632);
+        background-color: #e2a0b6;
+    }
+
+    .product-item:nth-child(2):hover {
+        box-shadow: 0 5px 15px rgba(144, 35, 62, .632);
+        background-color: #d6be94;
+    }
+
+    .product-item:nth-child(3):hover {
+        box-shadow: 0 5px 15px rgba(144, 35, 62, .632);
+        background-color: #aecc86;
+    }
+    .product-item:hover .product-description {
+        font-size: 15px;
+        letter-spacing: 0.48;
+        font-family: DM Sans, sans-serif;
+        line-height: 22px;
+    }
+
+    .product-item:hover h3 {
+        font-size: 22px;
     }
 
 }
@@ -188,14 +252,14 @@
         cursor: pointer ;
         width: 368px;
         height: 535px;
-        padding-top: 165px;
+        padding-top: 150px;
         padding-left: 32px;
         padding-right: 32px;
     }
     .product-image {
         width: 368px;
         top: -50%;
-        left: 0;
+        left: -5px;
     }
     .product-item h3 {
         font-size: 30px;
@@ -207,14 +271,55 @@
         line-height: 28px;
         margin-top: 32px;
     }
-    .arrow-right{
-        width: 50px;
-        height: 50px;
+    .arrow-container{
+        left: 160px;
+        bottom: 60px;
+        letter-spacing: 0.48px;
     }
-    .product-item:hover .arrow-right{
-        transform: rotate(-90deg);
-        box-shadow: 0 0 7px rgba(0, 0, 0, .15);
-        border-radius: 35%;
-        cursor: pointer;
+
+    .product-item:hover .product-description{
+        font-size: 18px;
+        line-height: 1.56;
     }
+
+    .product-item:hover h3{
+        font-size: 33px;
+    }
+    .products-label:hover{
+        cursor: default;
+        animation: letterspc;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    .products-header:hover{
+        cursor: default;
+        animation: letterspc2;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes letterspc {
+        0% {
+            letter-spacing: 0.4em;
+        }
+        100% {
+            letter-spacing: 0.04em;
+        }
+    }
+    @keyframes letterspc2 {
+        0% {
+            letter-spacing: 0.6em;
+        }
+        100% {
+            letter-spacing: 0.06em;
+        }
+    }
+        
 }   
