@@ -18,7 +18,7 @@
 .footer-title-ice-cream {
   font-family: var(--footer-title-font);
   font-weight: 400;
-  font-size: 18px;
+  font-size: clamp(1.125rem, 0.7679rem + 1.7857vw, 1.875rem);
   // line-height: 29.77px;
   /* width: 340px; */
   //   height: 20px;
@@ -39,7 +39,9 @@
 .letter {
   font-family: var(--footer-title-font);
   font-weight: 400;
-  font-size: 34px;
+  div:has(&) {
+    font-size: clamp(2.125rem, 1.0536rem + 5.3571vw, 3.625rem);
+  }
   // line-height: 54.96px;
   color: #d41443;
   width: 7em;
@@ -66,10 +68,11 @@
   column-gap: 1.765rem;
   text-align: center;
   justify-content: flex-end;
+  font-size: 0;
 }
 .footer-icon {
-  width: 32px;
-  height: 32px;
+  width: clamp(2rem, 1.9107rem + 0.4464vw, 2.125rem);
+  height: clamp(2rem, 1.9107rem + 0.4464vw, 2.125rem);
   // top: 3736px;
   // left: 590px;
   /* padding: 12px; */
@@ -91,7 +94,7 @@
   margin-left: auto;
   font-family: var(--footer-font);
   font-weight: 700;
-  font-size: 12px;
+  font-size: clamp(0.75rem, 0.6607rem + 0.4464vw, 0.875rem);
   line-height: 1.86em;
 }
 .contact-text {
@@ -156,36 +159,10 @@
     justify-content: space-between;
   }
   .footer-title-ice-cream {
-    // width: 340px;
-    // height: 57px;
-    // margin-left: 18px;
-    // margin-right: 460px;
-    font-size: 26px;
+    // font-size: 26px;
     letter-spacing: 0.04em;
   }
-  .footer-title-made {
-    // width: 340px;
-    // height: 57px;
-    // margin-left: -460px;
-  }
-  .footer-title-with {
-    // width: 340px;
-    // height: 110px;
-  }
-  .footer-title-passion {
-    // margin-top: -70px;
-    // width: 340px;
-    // height: 110px;
-  }
-  .social-links {
-    // margin-left: 500px;
-    // margin-top: -130px;
-  }
-  .contact-text {
-    // margin-left: 450px;
-  }
   .section-final {
-    // margin-left: 330px;
     display: block;
   }
   .letter {
@@ -202,53 +179,15 @@
 }
 /*Desktop*/
 @media screen and (min-width: 1158px) {
-  .footer-title-one {
-    /* flex-direction: row; */
-    gap: 40px;
-    /* width: 45%; */
-  }
-  .footer-title-one:hover {
-    .footer-title-made {
-      color: red;
-      margin-left: 150px;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      /* text-align: center; */
-      height: 50px;
-    }
-    .footer-title-ice-cream {
-      margin-left: 70px;
-    }
-  }
-
   .footer-title-ice-cream {
-    /* width: 472px;
-        height: 34px; */
-    margin: 0;
-    width: unset;
+    & > span:first-child {
+      display: inline;
+    }
   }
-
-  .footer-title-made {
-    /* width: 472px;
-        height: 34px;
-     */
-    margin: 0;
-    margin-left: 5px;
-  }
-  .footer-title-with {
-    width: 474px;
-    height: 66px;
-  }
-  .footer-title-passion {
-    width: 474px;
-    height: 66px;
-    margin-left: -360px;
-    margin-top: -12px;
+  .letter {
+    display: inline;
   }
   .social-links {
-    margin-left: 500px;
-    margin-top: -130px;
+    margin-top: 0.75rem;
   }
 }
