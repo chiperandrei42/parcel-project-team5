@@ -30,7 +30,15 @@
       <svg>
         <use href="./images/symbol-defs-header.svg#pink-circle" />
       </svg>
-      <img src="./images/icecream-cone-header-d.png?width=236" alt="ice cream cone" />
+      <img srcset="
+                  ./images/icecream-cone-header.avif?as=png&width=472 472w,
+                  ./images/icecream-cone-header.avif?as=png&width=342 342w,
+                  ./images/icecream-cone-header.avif?as=png&width=286 286w,
+                  ./images/icecream-cone-header.avif?as=png&width=236 236w,
+                  ./images/icecream-cone-header.avif?as=png&width=171 171w,
+                  ./images/icecream-cone-header.avif?as=png&width=143 143w
+                " sizes="(min-width: 1158px) 236px, (min-width: 768px) 143px, 171px"
+        src="./images/icecream-cone-header.avif" alt="ice cream cone" />
     </div>
     <h2 class="header-text">ice cream made with <span>passion</span></h2>
     <div class="header-buttons">
