@@ -96,6 +96,8 @@
   font-weight: 700;
   font-size: clamp(0.75rem, 0.6607rem + 0.4464vw, 0.875rem);
   line-height: 1.86em;
+  cursor: pointer;
+  transition: font-size 1s;
 }
 .contact-text {
   width: 268px;
@@ -113,10 +115,8 @@
   text-decoration: none;
   text-decoration-line: none;
   box-sizing: border-box;
-  cursor: pointer;
-  transition: font-size 1s;
 }
-.contact-phone:hover {
+.contacts-footer:hover {
   font-size: 15px;
   /* letter-spacing: 1px; */
 }
