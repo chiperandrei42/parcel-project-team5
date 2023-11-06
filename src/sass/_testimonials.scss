@@ -39,7 +39,7 @@
 .img-testimonials-8,
 .img-testimonials-9,
 .img-testimonials-10 {
-  transition: transform var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
   border-radius: 8px;
 }
 
@@ -56,6 +56,7 @@
   cursor: pointer;
   transform: scale(1.2);
   z-index: 3;
+  box-shadow: 0 11px 11px rgba(33, 33, 33, 0.2);
 }
 
 .img-testimonials-1 {
