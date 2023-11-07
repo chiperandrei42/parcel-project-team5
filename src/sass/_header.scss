@@ -1,0 +1,313 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo-svg {
+  width: 199px;
+  height: 50px;
+}
+
+.header-section {
+  height: 502px;
+  background-color: rgba(255, 184, 202, 1);
+}
+
+.header-text {
+  font-family: 'Titan One', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 218px;
+  color: #fff;
+  padding-top: 136px;
+  position: relative;
+}
+
+.header-text span {
+  color: rgba(212, 20, 67, 1);
+  font-family: 'Titan One', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 46.32px;
+}
+
+.mobile-tablet-menu-icon {
+  width: 20px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.icecream-cone {
+  position: absolute;
+  // background-color: transparent;
+  > svg {
+    position: absolute;
+    inset: -9px auto auto -81px;
+    width: 346px;
+    height: 344px;
+  }
+  > img {
+    position: relative;
+    width: 171px;
+  }
+  right: 32px;
+  top: 100px;
+}
+
+.header-buttons {
+  display: flex;
+  position: relative;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.header-buttons button:hover {
+  background-color: rgba(212, 20, 67, 1);
+  color: #fff;
+}
+
+.header-buttons button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(212, 20, 67, 1);
+  transition: background-color 250ms ease-in-out;
+}
+
+.tablet-buy-now {
+  display: none;
+  margin-top: 10px;
+}
+
+.logo-menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.tablet-cafes-number,
+.desktop-navbar,
+.food-truck-number,
+.woman-eating-ice-cream-header,
+.paragraph-and-button-container,
+.header-secondary-text,
+.milk-bottle-header {
+  display: none;
+}
+// Tablet
+@media screen and (min-width: 768px) {
+  .header-text {
+    padding-top: 20px;
+  }
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .logo-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    width: 75%;
+  }
+  .tablet-buy-now {
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(212, 20, 67, 1);
+    transition: background-color 250ms ease-in-out;
+    width: 160px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease-in-out;
+  }
+  .tablet-buy-now:hover {
+    color: #fff;
+    background-color: rgba(212, 20, 67, 1);
+  }
+
+  .milk-bottle-header {
+    display: block;
+    width: 152px;
+  }
+  .header-secondary-text {
+    position: relative;
+    width: 114px;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  .paragraph-secondary {
+    display: flex;
+    align-items: center;
+  }
+  .paragraph-and-button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph-and-button-container button {
+    margin-top: 7px;
+    font-family: 'DM Sans', sans-serif;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    color: rgba(212, 20, 67, 1);
+    background-color: #fff;
+    transition: background-color 250ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .paragraph-and-button-container button:hover {
+    background-color: rgba(212, 20, 67, 1);
+    color: #fff;
+  }
+  .woman-eating-ice-cream-header {
+    position: absolute;
+    display: block;
+    right: 32px;
+    top: 265px;
+    width: 190px;
+  }
+  .header-section {
+    height: 416px;
+  }
+  .icecream-cone {
+    > svg {
+      inset: -37px auto auto -74px;
+      width: 335px;
+      height: 333px;
+    }
+    > img {
+      width: 143px;
+    }
+    right: 303px;
+    height: 336px;
+    top: 80px;
+  }
+  .tablet-cafes-number {
+    display: block;
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    right: 32;
+    top: 92;
+  }
+
+  .food-truck-number {
+    display: block;
+    position: absolute;
+    width: 43px;
+    height: 51px;
+    right: 32;
+    top: 152;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1158px) {
+  .mobile-tablet-menu-icon {
+    display: none;
+  }
+  .icecream-cone {
+    > svg {
+      inset: -54px auto auto -119px;
+      width: 534px;
+      height: 534px;
+    }
+    > img {
+      width: auto;
+      height: auto;
+    }
+    top: 107px;
+    right: 368px;
+  }
+  .header-section {
+    height: 664px;
+  }
+  .woman-eating-ice-cream-header {
+    width: auto;
+    top: 423px;
+  }
+  .milk-bottle-header {
+    width: auto;
+  }
+  .header-secondary-text {
+    width: 200px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .header-text {
+    padding-top: 60px;
+    font-size: 38px;
+    width: 277px;
+    line-height: 52.49px;
+  }
+  .header-text span {
+    font-size: 58px;
+  }
+  .header-buttons button {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+  .tablet-cafes-number {
+    width: 72px;
+    height: 77px;
+  }
+  .food-truck-number {
+    width: 92px;
+    height: 76px;
+    top: 185px;
+  }
+  .desktop-navbar {
+    display: flex;
+    gap: 27px;
+  }
+  .desktop-navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    transition: color 250ms ease-in-out;
+  }
+  .desktop-navbar a:hover {
+    color: rgba(212, 20, 67, 1);
+  }
+  .logo-menu-container {
+    width: 65%;
+  }
+}
