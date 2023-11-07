@@ -37,6 +37,7 @@
 .mobile-tablet-menu-icon {
   width: 20px;
   height: 12px;
+  cursor: pointer;
 }
 
 .mobile-nav {
@@ -48,10 +49,19 @@
 
 .icecream-cone {
   position: absolute;
-  background-color: transparent;
+  // background-color: transparent;
+  > svg {
+    position: absolute;
+    inset: -9px auto auto -81px;
+    width: 346px;
+    height: 344px;
+  }
+  > img {
+    position: relative;
+    width: 171px;
+  }
   right: 32px;
   top: 100px;
-  width: 170px;
 }
 
 .header-buttons {
@@ -104,9 +114,6 @@
 }
 // Tablet
 @media screen and (min-width: 768px) {
-  .icecream-cone {
-    right: 303px;
-  }
   .header-text {
     padding-top: 20px;
   }
@@ -151,6 +158,7 @@
     width: 152px;
   }
   .header-secondary-text {
+    position: relative;
     width: 114px;
     display: flex;
     font-family: 'DM Sans', sans-serif;
@@ -196,7 +204,15 @@
     height: 416px;
   }
   .icecream-cone {
-    width: 143px;
+    > svg {
+      inset: -37px auto auto -74px;
+      width: 335px;
+      height: 333px;
+    }
+    > img {
+      width: 143px;
+    }
+    right: 303px;
     height: 336px;
     top: 80px;
   }
@@ -225,8 +241,15 @@
     display: none;
   }
   .icecream-cone {
-    width: auto;
-    height: auto;
+    > svg {
+      inset: -54px auto auto -119px;
+      width: 534px;
+      height: 534px;
+    }
+    > img {
+      width: auto;
+      height: auto;
+    }
     top: 107px;
     right: 368px;
   }

@@ -9,6 +9,9 @@
             <path fill="none" stroke="#d41443" stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="butt"
                 stroke-linejoin="miter" style="stroke: var(--color1, #d41443)" d="M0 29.714h45.714"></path>
         </symbol>
+        <symbol id="pink-circle" viewBox="0 0 2 2">
+            <circle cx="1" cy="1" r="1" style="fill:#ffa5ba" />
+        </symbol>
         <symbol id="icon-icecream-header-logo" viewBox="0 0 127 32">
             <path fill="#fff" style="fill: var(--color2, #fff)"
                 d="M31.36 16.32c0 8.66-6.877 15.68-15.36 15.68s-15.36-7.020-15.36-15.68c0-8.66 6.877-15.68 15.36-15.68s15.36 7.020 15.36 15.68z">
@@ -57,11 +60,15 @@
             </path>
         </symbol>
         <symbol id="icon-franchise" viewBox="0 0 22 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
-</symbol>
-<symbol id="icon-locations" viewBox="0 0 19 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
-</symbol>
+            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round"
+                stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8">
+            </path>
+        </symbol>
+        <symbol id="icon-locations" viewBox="0 0 19 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round"
+                stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8">
+            </path>
+        </symbol>
     </defs>
     <symbol id="icon-ice-cream-cone-header" viewBox="0 0 13 32">
         <path d="M0 0h13.346v32h-13.346v-32z"></path>
